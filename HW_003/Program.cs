@@ -1,10 +1,10 @@
 ﻿// Задача 19 Проверка палиндрома
 
-void Palindrom(long num)
+void Palindrom(int num)
 {
-    long num1; 
-    long current;
-    long sum = 0;
+    int num1; 
+    int current;
+    int sum = 0;
     num1 = num;
     while(num > 0)
     {
@@ -17,7 +17,7 @@ void Palindrom(long num)
 }
 
 Console.WriteLine("Введите любое целое число: ");
-long num = Convert.ToInt64(Console.ReadLine());
+int num = Convert.ToInt32(Console.ReadLine());
 
 Palindrom(num);
 
