@@ -141,30 +141,6 @@ void Show2dArray(int[,] array)
 }
 
 
-/*
-void ShowArray(double[] newArray)
-{
-    for (int i = 0; i < newArray.Length; i++)
-        Console.Write(newArray[i] + " "); 
-    Console.WriteLine();
-}
-
-double[] MiddleValue(int[,] array) // method 1
-{
-    double[] newArray = new double[array.GetLength(0)];
-    double summa = 0;
-    for(int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            summa = summa + array[i,j];
-        } 
-        newArray[i] = Math.Round(summa / array.GetLength(1), 1);
-        summa = 0;
-    }
-    return newArray;
-}
-*/
 
 string MiddleValue(int[,] array) // Method 2
 {
@@ -198,5 +174,5 @@ int max = Convert.ToInt32(Console.ReadLine());
 int[,] array = CreateRandom2dArray(m, n, min, max);
 Show2dArray(array);
 string result = MiddleValue(array);
-//ShowArray(newArray);
+
 Console.WriteLine(result);
